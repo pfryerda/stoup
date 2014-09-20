@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		45A284B119CE024900E148D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A284B019CE024900E148D1 /* main.m */; };
+		45A284B419CE024900E148D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A284B319CE024900E148D1 /* AppDelegate.m */; };
+		45A284BA19CE024900E148D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45A284B819CE024900E148D1 /* Main.storyboard */; };
+		45A284BC19CE024900E148D1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45A284BB19CE024900E148D1 /* Images.xcassets */; };
+		45A284BF19CE024900E148D1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45A284BD19CE024900E148D1 /* LaunchScreen.xib */; };
+		45A284CB19CE024900E148D1 /* stoup_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A284CA19CE024900E148D1 /* stoup_iosTests.m */; };
+		45A284DB19CE1C5C00E148D1 /* TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A284DA19CE1C5C00E148D1 /* TableView.m */; };
+		45A284DE19CE223300E148D1 /* AddSchool.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A284DD19CE223300E148D1 /* AddSchool.m */; };
+		45A284E119CE292100E148D1 /* School.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A284E019CE292100E148D1 /* School.m */; };
+		45A284E419CE295A00E148D1 /* SchoolClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A284E319CE295A00E148D1 /* SchoolClass.m */; };
+		45A284E719CE299E00E148D1 /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = 45A284E619CE299E00E148D1 /* Group.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		45A284C519CE024900E148D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45A284A319CE024900E148D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45A284AA19CE024900E148D1;
+			remoteInfo = "stoup-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		45A284AB19CE024900E148D1 /* stoup-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "stoup-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		45A284AF19CE024900E148D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45A284B019CE024900E148D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		45A284B219CE024900E148D1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		45A284B319CE024900E148D1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		45A284B919CE024900E148D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		45A284BB19CE024900E148D1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		45A284BE19CE024900E148D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		45A284C419CE024900E148D1 /* stoup-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "stoup-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		45A284C919CE024900E148D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45A284CA19CE024900E148D1 /* stoup_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = stoup_iosTests.m; sourceTree = "<group>"; };
+		45A284D519CE025C00E148D1 /* Moxtra.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Moxtra.h; sourceTree = "<group>"; };
+		45A284D619CE025C00E148D1 /* MoxtraSDK */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = MoxtraSDK; sourceTree = "<group>"; };
+		45A284D719CE025C00E148D1 /* MoxtraSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MoxtraSDKResources.bundle; sourceTree = "<group>"; };
+		45A284D819CE025C00E148D1 /* MXClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MXClient.h; sourceTree = "<group>"; };
+		45A284D919CE1C5C00E148D1 /* TableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableView.h; path = ../TableView.h; sourceTree = "<group>"; };
+		45A284DA19CE1C5C00E148D1 /* TableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableView.m; path = ../TableView.m; sourceTree = "<group>"; };
+		45A284DC19CE223300E148D1 /* AddSchool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddSchool.h; sourceTree = "<group>"; };
+		45A284DD19CE223300E148D1 /* AddSchool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddSchool.m; sourceTree = "<group>"; };
+		45A284DF19CE292100E148D1 /* School.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = School.h; sourceTree = "<group>"; };
+		45A284E019CE292100E148D1 /* School.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = School.m; sourceTree = "<group>"; };
+		45A284E219CE295A00E148D1 /* SchoolClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SchoolClass.h; sourceTree = "<group>"; };
+		45A284E319CE295A00E148D1 /* SchoolClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchoolClass.m; sourceTree = "<group>"; };
+		45A284E519CE299E00E148D1 /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
+		45A284E619CE299E00E148D1 /* Group.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Group.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		45A284A819CE024900E148D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45A284C119CE024900E148D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45A284A219CE024900E148D1 = {
+			isa = PBXGroup;
+			children = (
+				45A284D419CE025C00E148D1 /* MoxtraSDK.sdk */,
+				45A284AD19CE024900E148D1 /* stoup-ios */,
+				45A284C719CE024900E148D1 /* stoup-iosTests */,
+				45A284AC19CE024900E148D1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		45A284AC19CE024900E148D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45A284AB19CE024900E148D1 /* stoup-ios.app */,
+				45A284C419CE024900E148D1 /* stoup-iosTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45A284AD19CE024900E148D1 /* stoup-ios */ = {
+			isa = PBXGroup;
+			children = (
+				45A284B219CE024900E148D1 /* AppDelegate.h */,
+				45A284B319CE024900E148D1 /* AppDelegate.m */,
+				45A284D919CE1C5C00E148D1 /* TableView.h */,
+				45A284DA19CE1C5C00E148D1 /* TableView.m */,
+				45A284DC19CE223300E148D1 /* AddSchool.h */,
+				45A284DD19CE223300E148D1 /* AddSchool.m */,
+				45A284B819CE024900E148D1 /* Main.storyboard */,
+				45A284DF19CE292100E148D1 /* School.h */,
+				45A284E019CE292100E148D1 /* School.m */,
+				45A284E219CE295A00E148D1 /* SchoolClass.h */,
+				45A284E319CE295A00E148D1 /* SchoolClass.m */,
+				45A284E519CE299E00E148D1 /* Group.h */,
+				45A284E619CE299E00E148D1 /* Group.m */,
+				45A284BB19CE024900E148D1 /* Images.xcassets */,
+				45A284BD19CE024900E148D1 /* LaunchScreen.xib */,
+				45A284AE19CE024900E148D1 /* Supporting Files */,
+			);
+			path = "stoup-ios";
+			sourceTree = "<group>";
+		};
+		45A284AE19CE024900E148D1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				45A284AF19CE024900E148D1 /* Info.plist */,
+				45A284B019CE024900E148D1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		45A284C719CE024900E148D1 /* stoup-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				45A284CA19CE024900E148D1 /* stoup_iosTests.m */,
+				45A284C819CE024900E148D1 /* Supporting Files */,
+			);
+			path = "stoup-iosTests";
+			sourceTree = "<group>";
+		};
+		45A284C819CE024900E148D1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				45A284C919CE024900E148D1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		45A284D419CE025C00E148D1 /* MoxtraSDK.sdk */ = {
+			isa = PBXGroup;
+			children = (
+				45A284D519CE025C00E148D1 /* Moxtra.h */,
+				45A284D619CE025C00E148D1 /* MoxtraSDK */,
+				45A284D719CE025C00E148D1 /* MoxtraSDKResources.bundle */,
+				45A284D819CE025C00E148D1 /* MXClient.h */,
+			);
+			name = MoxtraSDK.sdk;
+			path = ../../../../Downloads/Moxtra_Meet_iOS_V.121.140911/MoxtraSDK.sdk;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		45A284AA19CE024900E148D1 /* stoup-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45A284CE19CE024900E148D1 /* Build configuration list for PBXNativeTarget "stoup-ios" */;
+			buildPhases = (
+				45A284A719CE024900E148D1 /* Sources */,
+				45A284A819CE024900E148D1 /* Frameworks */,
+				45A284A919CE024900E148D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "stoup-ios";
+			productName = "stoup-ios";
+			productReference = 45A284AB19CE024900E148D1 /* stoup-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		45A284C319CE024900E148D1 /* stoup-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45A284D119CE024900E148D1 /* Build configuration list for PBXNativeTarget "stoup-iosTests" */;
+			buildPhases = (
+				45A284C019CE024900E148D1 /* Sources */,
+				45A284C119CE024900E148D1 /* Frameworks */,
+				45A284C219CE024900E148D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				45A284C619CE024900E148D1 /* PBXTargetDependency */,
+			);
+			name = "stoup-iosTests";
+			productName = "stoup-iosTests";
+			productReference = 45A284C419CE024900E148D1 /* stoup-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		45A284A319CE024900E148D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = stoup;
+				TargetAttributes = {
+					45A284AA19CE024900E148D1 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					45A284C319CE024900E148D1 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 45A284AA19CE024900E148D1;
+					};
+				};
+			};
+			buildConfigurationList = 45A284A619CE024900E148D1 /* Build configuration list for PBXProject "stoup-ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 45A284A219CE024900E148D1;
+			productRefGroup = 45A284AC19CE024900E148D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				45A284AA19CE024900E148D1 /* stoup-ios */,
+				45A284C319CE024900E148D1 /* stoup-iosTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		45A284A919CE024900E148D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45A284BA19CE024900E148D1 /* Main.storyboard in Resources */,
+				45A284BF19CE024900E148D1 /* LaunchScreen.xib in Resources */,
+				45A284BC19CE024900E148D1 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45A284C219CE024900E148D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		45A284A719CE024900E148D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45A284E419CE295A00E148D1 /* SchoolClass.m in Sources */,
+				45A284DE19CE223300E148D1 /* AddSchool.m in Sources */,
+				45A284E719CE299E00E148D1 /* Group.m in Sources */,
+				45A284E119CE292100E148D1 /* School.m in Sources */,
+				45A284DB19CE1C5C00E148D1 /* TableView.m in Sources */,
+				45A284B419CE024900E148D1 /* AppDelegate.m in Sources */,
+				45A284B119CE024900E148D1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45A284C019CE024900E148D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45A284CB19CE024900E148D1 /* stoup_iosTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		45A284C619CE024900E148D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45A284AA19CE024900E148D1 /* stoup-ios */;
+			targetProxy = 45A284C519CE024900E148D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		45A284B819CE024900E148D1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45A284B919CE024900E148D1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		45A284BD19CE024900E148D1 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45A284BE19CE024900E148D1 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		45A284CC19CE024900E148D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		45A284CD19CE024900E148D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		45A284CF19CE024900E148D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "stoup-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		45A284D019CE024900E148D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "stoup-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		45A284D219CE024900E148D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "stoup-iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/stoup-ios.app/stoup-ios";
+			};
+			name = Debug;
+		};
+		45A284D319CE024900E148D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "stoup-iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/stoup-ios.app/stoup-ios";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		45A284A619CE024900E148D1 /* Build configuration list for PBXProject "stoup-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45A284CC19CE024900E148D1 /* Debug */,
+				45A284CD19CE024900E148D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45A284CE19CE024900E148D1 /* Build configuration list for PBXNativeTarget "stoup-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45A284CF19CE024900E148D1 /* Debug */,
+				45A284D019CE024900E148D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		45A284D119CE024900E148D1 /* Build configuration list for PBXNativeTarget "stoup-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45A284D219CE024900E148D1 /* Debug */,
+				45A284D319CE024900E148D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 45A284A319CE024900E148D1 /* Project object */;
+}

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A361c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rYc-sv-GY8">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Schools-->
+        <scene sceneID="TMC-7I-ica">
+            <objects>
+                <tableViewController id="Cdl-Ou-t2z" customClass="TableView" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="gOC-60-woP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="schoolCell" textLabel="BUc-xI-oVK" style="IBUITableViewCellStyleDefault" id="K3k-BB-q1x">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="K3k-BB-q1x" id="Kzy-M0-Ekv">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="University of Some School" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BUc-xI-oVK">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Cdl-Ou-t2z" id="lAv-0b-aXR"/>
+                            <outlet property="delegate" destination="Cdl-Ou-t2z" id="oo9-0W-Cwc"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Schools" id="agY-DO-NbP">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="qVg-eE-6ay">
+                            <connections>
+                                <segue destination="UEh-8O-Dxv" kind="presentation" identifier="addSchool" id="B5M-pH-JfU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="FmO-xH-otK" id="7ec-z9-9nt"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XqU-aq-qD5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="FmO-xH-otK">
+                    <connections>
+                        <outlet property="delegate" destination="Cdl-Ou-t2z" id="hCh-dk-PAc"/>
+                        <outlet property="searchContentsController" destination="Cdl-Ou-t2z" id="e7I-84-dYo"/>
+                        <outlet property="searchResultsDataSource" destination="Cdl-Ou-t2z" id="M3e-R8-6rO"/>
+                        <outlet property="searchResultsDelegate" destination="Cdl-Ou-t2z" id="V30-zP-qNE"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="1318" y="-96"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8F3-OS-7kd">
+            <objects>
+                <navigationController id="UEh-8O-Dxv" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jZ3-00-YI2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="av3-NC-fNC" kind="relationship" relationship="rootViewController" id="VJq-YR-3US"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lls-8c-ZNl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2070" y="-787"/>
+        </scene>
+        <!--Add a School-->
+        <scene sceneID="bSp-kq-Y9c">
+            <objects>
+                <viewController id="av3-NC-fNC" customClass="AddSchool" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9me-bv-Ln6"/>
+                        <viewControllerLayoutGuide type="bottom" id="YsF-a0-rkM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Drk-cF-jTX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Class Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ffw-4s-87W">
+                                <rect key="frame" x="16" y="194" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="School Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qTR-1X-84t">
+                                <rect key="frame" x="16" y="114" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ffw-4s-87W" firstAttribute="trailing" secondItem="Drk-cF-jTX" secondAttribute="trailingMargin" id="2dD-BC-j3S"/>
+                            <constraint firstItem="qTR-1X-84t" firstAttribute="top" secondItem="9me-bv-Ln6" secondAttribute="bottom" constant="50" id="Ht9-d2-ebD"/>
+                            <constraint firstItem="Ffw-4s-87W" firstAttribute="top" secondItem="qTR-1X-84t" secondAttribute="bottom" constant="50" id="I8X-Gn-dsB"/>
+                            <constraint firstItem="qTR-1X-84t" firstAttribute="leading" secondItem="Drk-cF-jTX" secondAttribute="leadingMargin" id="bOJ-QN-1ke"/>
+                            <constraint firstItem="qTR-1X-84t" firstAttribute="trailing" secondItem="Drk-cF-jTX" secondAttribute="trailingMargin" id="g4N-9F-4V3"/>
+                            <constraint firstItem="Ffw-4s-87W" firstAttribute="leading" secondItem="Drk-cF-jTX" secondAttribute="leadingMargin" id="xSH-7P-il3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add a School" id="yAG-yd-PoB">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="uZo-eD-L2h">
+                            <connections>
+                                <action selector="cancel:" destination="av3-NC-fNC" id="qvc-vJ-ux0"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="Wov-hf-jhb">
+                            <connections>
+                                <action selector="done:" destination="av3-NC-fNC" id="o92-Ho-qfm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="classNameField" destination="Ffw-4s-87W" id="gYj-db-dXI"/>
+                        <outlet property="schoolNameField" destination="qTR-1X-84t" id="XDl-Vb-0rr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rFA-dl-RKU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2791" y="-787"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pRg-5X-zgk">
+            <objects>
+                <navigationController id="rYc-sv-GY8" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RQT-NY-R5t">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Cdl-Ou-t2z" kind="relationship" relationship="rootViewController" id="Uha-BF-pcm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jyn-E6-tlb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="498" y="-96"/>
+        </scene>
+    </scenes>
+</document>
